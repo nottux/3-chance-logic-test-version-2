@@ -4,17 +4,25 @@
 	"Version"		"14"
 	"FileID"		"0x000000006326CED6"
 	"Timestamp_Created"		"0x000000005C703DE3"
-	"Timestamp_Modified"		"0x000000005C703EBC"
-	"CompileTime"		"65.737999"
+	"Timestamp_Modified"		"0x000000005C709FEA"
+	"CompileTime"		"71.450996"
 	"Coop"		"0"
 	"Title"		"3 chance logic test version 2"
 	"Description"		"this chamber is for testing 3 chance logic unit
 [spoiler]with extra easter egg[/spoiler]
 and its smaller
 
+Here is a video showing how system works and also shows the easter egg:
+https://steamcommunity.com/sharedfiles/filedetails/?id=1661676490
+
+p2c file is here:
+https://github.com/tuxutku/3-chance-logic-test-version-2
+
 update:
 enabled cube dropper for extra cube
-made that last cube in logic unit is now savely disposable"
+made that last cube in logic unit is now savely disposable
+
+update: i fixed the last version, it wasn't working at all, so i roll back to panels but i set to 90 degrees now"
 	"PreviewDirty"		"0"
 	"ChamberSize"		"10 13 8"
 	"Voxels"
@@ -27,7 +35,7 @@ made that last cube in logic unit is now savely disposable"
 				"Y12"		"f11101111110"
 				"Y11"		"f11101111110"
 				"Y10"		"f11101111110"
-				"Y9"		"f10100011110"
+				"Y9"		"f11100011110"
 				"Y8"		"f11111111110"
 				"Y7"		"f11111111110"
 				"Y6"		"f11111111110"
@@ -1106,7 +1114,7 @@ made that last cube in logic unit is now savely disposable"
 			"Type"		"ITEM_CUBE"
 			"Deletable"		"1"
 			"VoxelPos"		"1 9 1"
-			"LocalPos"		"-0 -0 -0.125"
+			"LocalPos"		"0 0 0"
 			"Angles"		"0 0 0"
 			"ITEM_PROPERTY_CUBE_TYPE"		"2"
 			"ITEM_PROPERTY_DROPPER_ENABLED"		"0"
@@ -2017,85 +2025,16 @@ made that last cube in logic unit is now savely disposable"
 		"Item"
 		{
 			"Index"		"106"
-			"Type"		"ITEM_LIGHT_BRIDGE"
+			"Type"		"ITEM_PANEL_CLEAR"
 			"Deletable"		"1"
-			"VoxelPos"		"1 9 0"
-			"LocalPos"		"-0 -0 0.375"
-			"Angles"		"90 -90 0"
-			"ITEM_PROPERTY_CONNECTION_COUNT"		"1"
-			"ITEM_PROPERTY_START_ENABLED"		"1"
-			"Facing"		"0 0 0"
-			"ConnectionVisiblity"		"0"
-		}
-		"Item"
-		{
-			"Index"		"107"
-			"Type"		"ITEM_BARRIER_HAZARD"
-			"Deletable"		"1"
-			"VoxelPos"		"1 9 0"
-			"LocalPos"		"0 0 0"
-			"Angles"		"90 -90 0"
-			"ITEM_PROPERTY_CONNECTION_COUNT"		"0"
-			"ITEM_PROPERTY_BARRIER_HAZARD_TYPE"		"0"
-			"ITEM_PROPERTY_START_ENABLED"		"1"
-			"Facing"		"0 0 0"
-			"ConnectionVisiblity"		"0"
-		}
-		"Item"
-		{
-			"Index"		"108"
-			"Type"		"ITEM_BARRIER_HAZARD_EXTENT"
-			"Deletable"		"0"
-			"VoxelPos"		"1 9 0"
-			"LocalPos"		"0 0 0"
-			"Angles"		"0 180 180"
-			"Facing"		"0 0 0"
-			"ConnectionVisiblity"		"0"
-		}
-		"Item"
-		{
-			"Index"		"109"
-			"Type"		"ITEM_BARRIER_HAZARD_EXTENT"
-			"Deletable"		"0"
-			"VoxelPos"		"1 9 0"
-			"LocalPos"		"0 0 0"
-			"Angles"		"0 0 180"
-			"Facing"		"0 0 0"
-			"ConnectionVisiblity"		"0"
-		}
-		"Item"
-		{
-			"Index"		"110"
-			"Type"		"ITEM_BARRIER_HAZARD"
-			"Deletable"		"1"
-			"VoxelPos"		"1 9 0"
-			"LocalPos"		"-0 -0 -0.375"
-			"Angles"		"-90 90 0"
-			"ITEM_PROPERTY_CONNECTION_COUNT"		"0"
-			"ITEM_PROPERTY_BARRIER_HAZARD_TYPE"		"1"
-			"ITEM_PROPERTY_START_ENABLED"		"1"
-			"Facing"		"0 0 0"
-			"ConnectionVisiblity"		"0"
-		}
-		"Item"
-		{
-			"Index"		"111"
-			"Type"		"ITEM_BARRIER_HAZARD_EXTENT"
-			"Deletable"		"0"
-			"VoxelPos"		"1 9 0"
+			"VoxelPos"		"1 9 1"
 			"LocalPos"		"0 0 0"
 			"Angles"		"0 180 0"
-			"Facing"		"0 0 0"
-			"ConnectionVisiblity"		"0"
-		}
-		"Item"
-		{
-			"Index"		"112"
-			"Type"		"ITEM_BARRIER_HAZARD_EXTENT"
-			"Deletable"		"0"
-			"VoxelPos"		"1 9 0"
-			"LocalPos"		"0 0 0"
-			"Angles"		"0 0 0"
+			"ITEM_PROPERTY_CONNECTION_COUNT"		"1"
+			"ITEM_PROPERTY_ANGLED_PANEL_TYPE"		"0"
+			"ITEM_PROPERTY_START_DEPLOYED"		"0"
+			"ITEM_PROPERTY_PORTALABLE"		"1"
+			"ITEM_PROPERTY_ANGLED_PANEL_ANIMATION"		"ramp_90_deg_open"
 			"Facing"		"0 0 0"
 			"ConnectionVisiblity"		"0"
 		}
@@ -2362,33 +2301,9 @@ made that last cube in logic unit is now savely disposable"
 		}
 		"Connection"
 		{
-			"Sender"		"107"
-			"Receiver"		"108"
-			"Type"		"CONNECTION_BARRIER_ANCHOR_TO_EXTENT"
-		}
-		"Connection"
-		{
-			"Sender"		"107"
-			"Receiver"		"109"
-			"Type"		"CONNECTION_BARRIER_ANCHOR_TO_EXTENT"
-		}
-		"Connection"
-		{
 			"Sender"		"38"
 			"Receiver"		"106"
 			"Type"		"CONNECTION_STANDARD"
-		}
-		"Connection"
-		{
-			"Sender"		"110"
-			"Receiver"		"111"
-			"Type"		"CONNECTION_BARRIER_ANCHOR_TO_EXTENT"
-		}
-		"Connection"
-		{
-			"Sender"		"110"
-			"Receiver"		"112"
-			"Type"		"CONNECTION_BARRIER_ANCHOR_TO_EXTENT"
 		}
 	}
 }
